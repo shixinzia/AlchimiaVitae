@@ -42,12 +42,12 @@ public class AlchimiaItems {
 
     // {{{ Tools
     public static final SlimefunItemStack SOUL_COLLECTOR = new SlimefunItemStack("AV_SOUL_COLLECTOR",
-            Material.DIAMOND_SWORD, AlchimiaUtils.format("<gradient:#6baefa:#7145b0>Soul Collector</gradient>"),
-            "&bExtracts souls", "",
-            "&7Killed mobs will drop souls",
-            "&73x EXP drops from all mobs",
-            "&7Wither-related mobs will",
-            "&7drop additional souls",
+            Material.DIAMOND_SWORD, AlchimiaUtils.format("<gradient:#6baefa:#7145b0>灵魂收集者</gradient>"),
+            "&b汲取灵魂", "",
+            "&7被杀死的生物会掉落灵魂",
+            "&73所有类型的生物会3倍掉落灵魂",
+            "&7亡灵类生物会",
+            "&7掉落额外灵魂",
             "", AlchimiaUtils.itemType("Tool"));
 
     static {
@@ -61,10 +61,10 @@ public class AlchimiaItems {
 
     // {{{ Machines
     public static final SlimefunItemStack PLANT_INFUSION_CHAMBER = new SlimefunItemStack("AV_PLANT_INFUSION_CHAMBER",
-            Material.LIME_STAINED_GLASS, AlchimiaUtils.format("<gradient:#549c64:#1de078>Plant Infusion Chamber</gradient>"),
-            "&bInfuses plants with dark",
-            "&bor light energy using",
-            "&bMagical Lumps and Souls", "",
+            Material.LIME_STAINED_GLASS, AlchimiaUtils.format("<gradient:#549c64:#1de078>植物输液舱</gradient>"),
+            "&b将暗能量注入植物之中",
+            "&b或使用魔法结晶",
+            "&b将光能量注入到植物之中", "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
             LoreBuilder.speed(1),
             LoreBuilder.powerPerSecond(64),
@@ -72,9 +72,9 @@ public class AlchimiaItems {
 
     public static final SlimefunItemStack EXP_CRYSTALLIZER = new SlimefunItemStack("AV_EXP_CRYSTALLIZER",
             Material.LIME_STAINED_GLASS,
-            AlchimiaUtils.format("<gradient:#50fa75:#3dd2ff>Experience Crystallizer</gradient>"),
-            "&aForms experience into a crystalline,",
-            "&adurable, and stable form", "",
+            AlchimiaUtils.format("<gradient:#50fa75:#3dd2ff>经验结晶器</gradient>"),
+            "&a将经验转换为,",
+            "&坚固且耐久的结晶形式", "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
             LoreBuilder.speed(1),
             LoreBuilder.powerPerSecond(32),
@@ -83,10 +83,10 @@ public class AlchimiaItems {
 
     // {{{ Resources
     public static final SlimefunItemStack CONDENSED_SOUL = new SlimefunItemStack("AV_CONDENSED_SOUL",
-            Material.LIGHT_BLUE_DYE, AlchimiaUtils.format("<gradient:#6baefa:#7145b0>Condensed Soul</gradient>"),
-            "&bA soul, condensed into an orb",
-            "&9&oPerhaps there is a way",
-            "&9&oto manipulate its power...",
+            Material.LIGHT_BLUE_DYE, AlchimiaUtils.format("<gradient:#6baefa:#7145b0>凝结的灵魂</gradient>"),
+            "&b一个灵魂凝结成了一个球体",
+            "&9&o或许这是一种",
+            "&9&o操纵其力量的方法...",
             "", AlchimiaUtils.itemType("Raw Magic Resource"));
 
     static {
@@ -99,8 +99,8 @@ public class AlchimiaItems {
 
     public static final SlimefunItemStack LIGHT_MAGIC_PLANT = new SlimefunItemStack("AV_GOOD_MAGIC_PLANT",
             Material.OAK_SAPLING,
-            AlchimiaUtils.format("<gradient:#2ddae0:#31f876>Plant of Light Magic</gradient>"),
-            "&aRadiates an empyreal glow",
+            AlchimiaUtils.format("<gradient:#2ddae0:#31f876>光明魔法植物</gradient>"),
+            "&a散发着虚无缥缈的光芒",
             "", AlchimiaUtils.itemType("Base Magic Resource"));
 
     static {
@@ -113,9 +113,9 @@ public class AlchimiaItems {
 
     public static final SlimefunItemStack DARK_MAGIC_PLANT = new SlimefunItemStack("AV_EVIL_MAGIC_PLANT",
             Material.OAK_SAPLING,
-            AlchimiaUtils.format("<gradient:#ff5555:#ffa012>Plant of Dark Magic</gradient>"),
-            "&cIt's taking in a bit too much",
-            "&clight to be photosynthesizing",
+            AlchimiaUtils.format("<gradient:#ff5555:#ffa012>暗魔法植物</gradient>"),
+            "&c它吸收的有点多了",
+            "&c以至于无法进行光合作用",
             "", AlchimiaUtils.itemType("Base Magic Resource"));
 
     static {
@@ -128,8 +128,8 @@ public class AlchimiaItems {
 
     public static final SlimefunItemStack EXP_CRYSTAL = new SlimefunItemStack("AV_EXP_CRYSTAL",
             Material.EMERALD,
-            AlchimiaUtils.format("<gradient:#50fa75:#3dd2ff>Experience Crystal</gradient>"),
-            "&aCrystallized.",
+            AlchimiaUtils.format("<gradient:#50fa75:#3dd2ff>经验晶体</gradient>"),
+            "&a晶体化.",
             "", AlchimiaUtils.itemType("Base Magic Resource"));
 
     static {
@@ -142,21 +142,21 @@ public class AlchimiaItems {
 
     public static final SlimefunItemStack LIGHT_ESSENCE = new SlimefunItemStack("AV_GOOD_ESSENCE",
             Material.SUGAR,
-            AlchimiaUtils.format("<gradient:#2ddae0:#31f876>Light Essence</gradient>"),
-            "&aPulsates with luminescence",
+            AlchimiaUtils.format("<gradient:#2ddae0:#31f876>光之精华</gradient>"),
+            "&a随着光芒跳动",
             "", AlchimiaUtils.itemType("Processed Magic Resource"));
 
     public static final SlimefunItemStack DARK_ESSENCE = new SlimefunItemStack("AV_EVIL_ESSENCE",
             Material.GUNPOWDER,
-            AlchimiaUtils.format("<gradient:#ff5555:#ffa012>Dark Essence</gradient>"),
-            "&cAbsorbs light like a",
-            "&csponge absorbs water",
+            AlchimiaUtils.format("<gradient:#ff5555:#ffa012>暗之精华</gradient>"),
+            "&c像海绵吸水一样",
+            "&c吸收光能量",
             "", AlchimiaUtils.itemType("Processed Magic Resource"));
 
     public static final SlimefunItemStack ILLUMIUM = new SlimefunItemStack("AV_ILLUMIUM",
             Material.IRON_INGOT,
-            AlchimiaUtils.format("<gradient:#2ddae0:#31f876>Illumium Ingot</gradient>"),
-            "&aIt energetically effuses light in your hand",
+            AlchimiaUtils.format("<gradient:#2ddae0:#31f876>光明锭</gradient>"),
+            "&a它在你的手掌中散发着活力的光芒",
             "", AlchimiaUtils.itemType("Enriched Magic Resource"));
 
     static {
@@ -169,8 +169,8 @@ public class AlchimiaItems {
 
     public static final SlimefunItemStack DARKSTEEL = new SlimefunItemStack("AV_DARKSTEEL",
             Material.NETHERITE_INGOT,
-            AlchimiaUtils.format("<gradient:#ff5555:#ffa012>Darksteel Ingot</gradient>"),
-            "&cIt radiates... with darkness?",
+            AlchimiaUtils.format("<gradient:#ff5555:#ffa012>黑钢锭</gradient>"),
+            "&c它散发着......黑暗的气息?",
             "", AlchimiaUtils.itemType("Enriched Magic Resource"));
 
     static {
@@ -185,39 +185,39 @@ public class AlchimiaItems {
     // {{{ Divine Altar (Transmutation)
     public static final SlimefunItemStack DIVINE_ALTAR = new SlimefunItemStack("AV_DIVINE_ALTAR",
             Material.ENCHANTING_TABLE,
-            AlchimiaUtils.format("<gradient:#ff5555:#ff6cfd>Divine Altar</gradient>"),
-            "&5A sacred apparatus for the",
-            "&5performance of ancient rituals",
+            AlchimiaUtils.format("<gradient:#ff5555:#ff6cfd>神圣祭坛</gradient>"),
+            "&5一个神圣的祭坛",
+            "&5用于古老仪式的进行",
             "", AlchimiaUtils.itemType("Altar"));
 
     public static final SlimefunItemStack MOLTEN_MYSTERY_METAL = new SlimefunItemStack("AV_MOLTEN_MYSTERY_METAL",
             Material.LAVA_BUCKET,
-            AlchimiaUtils.format("<gradient:#ff6745:#ff5555>Molten Mystery Metal</gradient>"),
-            "&6A conglomerate of different metals",
+            AlchimiaUtils.format("<gradient:#ff6745:#ff5555>熔融神秘金属</gradient>"),
+            "&6各种金属的集合体",
             "", AlchimiaUtils.itemType("Transmutation Resource"));
 
     public static final SlimefunItemStack MYSTERY_METAL = new SlimefunItemStack("AV_MYSTERY_METAL",
             Material.IRON_INGOT,
-            AlchimiaUtils.format("<gradient:#ff6745:#ff5555>Mystery Metal Ingot</gradient>"),
-            "&6Contains many metals",
+            AlchimiaUtils.format("<gradient:#ff6745:#ff5555>神秘金属锭</gradient>"),
+            "&6包含许多种金属",
             "", AlchimiaUtils.itemType("Transmutation Resource"));
     // }}}
 
     // {{{ Cosmic Cauldron (Potions)
     public static final SlimefunItemStack COSMIC_CAULDRON = new SlimefunItemStack("AV_ORNATE_CAULDRON",
             Material.CAULDRON,
-            AlchimiaUtils.format("<gradient:#57ebbe:#f6fa2a>Cosmic Cauldron</gradient>"),
-            "&2An altar for brewing advanced potions",
+            AlchimiaUtils.format("<gradient:#57ebbe:#f6fa2a>华丽炼药锅</gradient>"),
+            "&2酿造高级药水的祭坛",
             "", AlchimiaUtils.itemType("Altar"));
 
     private static final Map<PotionEffectType, int[]> potEffectsMap = new HashMap<>();
 
     public static final SlimefunItemStack POTION_OF_OSMOSIS = AlchimiaUtils.makePotion(
             "AV_POTION_OF_OSMOSIS",
-            AlchimiaUtils.format("<gradient:#6274e7:#8752a3>Potion of Osmosis</gradient>"),
+            AlchimiaUtils.format("<gradient:#6274e7:#8752a3>渗透药水</gradient>"),
             Color.SILVER, potEffectsMap, false,
-            "&6Absorbs your potion effects",
-            "&6and stores them in a bottle on &eRight Click",
+            "&6右键点击",
+            "&6吸收你身上的药水效果 &e并将它们储存到药水瓶中k",
             "", AlchimiaUtils.itemType("Potion"));
 
     private static final Configuration cfg = AlchimiaVitae.i().getConfig();
@@ -248,7 +248,7 @@ public class AlchimiaItems {
 
     public static final SlimefunItemStack BENEVOLENT_BREW = AlchimiaUtils.makePotion(
             "AV_BENEVOLENT_BREW_POTION",
-            AlchimiaUtils.format("<gradient:#2ddae0:#31f876>Benevolent Brew</gradient>"),
+            AlchimiaUtils.format("<gradient:#2ddae0:#31f876>仁慈之酿</gradient>"),
             Color.LIME, potEffectsMap, false,
             "", AlchimiaUtils.itemType("Potion"));
 
@@ -281,17 +281,17 @@ public class AlchimiaItems {
 
     public static final SlimefunItemStack MALEVOLENT_CONCOCTION = AlchimiaUtils.makePotion(
             "AV_MALEVOLENT_CONCOCTION_SPLASH_POTION",
-            AlchimiaUtils.format("<gradient:#ff5555:#ffa012>Malevolent Concoction</gradient>"),
+            AlchimiaUtils.format("<gradient:#ff5555:#ffa012>恶毒混合物</gradient>"),
             Color.MAROON, potEffectsMap, true,
             "", AlchimiaUtils.itemType("Potion"));
     // }}}
 
     // {{{ Altar of Infusion (Infusion)
     public static final SlimefunItemStack ALTAR_OF_INFUSION = new SlimefunItemStack("AV_ALTAR_OF_INFUSION",
-            Material.LODESTONE, AlchimiaUtils.format("<gradient:#f78770:#ff607b>Altar of Infusion</gradient>"),
-            "&5Adds powerful effects to tools", "",
-            "&7Only works on gold, iron, diamond, netherite and",
-            "&7gear, as well as fishing rods, bows, and crossbows",
+            Material.LODESTONE, AlchimiaUtils.format("<gradient:#f78770:#ff607b>注入祭坛</gradient>"),
+            "&5为你的工具添加强力的效果", "",
+            "&7只对铁,金,钻石,下届合金工具和装备",
+            "&7钓鱼竿,弓,十字弩生效",
             "", AlchimiaUtils.itemType("Altar"));
     // }}}
 
